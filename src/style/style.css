@@ -234,7 +234,7 @@ header, main, footer {
   justify-content: center;
   gap: 20px;
 }
-.cart__product__title::after, .cart__product__price::after {
+.cart__product__favorit, .cart__product__basket {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -257,19 +257,9 @@ header, main, footer {
   line-height: 23px;
   text-transform: uppercase;
 }
-.cart__product__price::after {
-  content: "\f07a";
-  top: 90px;
-  right: 19px;
-}
 .cart__product__title {
   font-size: 20px;
   line-height: 24px;
-}
-.cart__product__title::after {
-  content: "\f004";
-  top: 20px;
-  right: 19px;
 }
 .cart__product__name {
   font-family: var(--MB);
@@ -279,6 +269,14 @@ header, main, footer {
   line-height: 24px;
   text-transform: uppercase;
   color: #000000;
+}
+.cart__product__favorit {
+  top: 90px;
+  right: 19px;
+}
+.cart__product__basket {
+  top: 20px;
+  right: 19px;
 }
 
 .main-footer {

@@ -220,7 +220,7 @@ header, main, footer{
         align-items: center;
         justify-content: center;
         gap: 20px;
-        &__title::after, &__price::after{
+        &__favorit, &__basket{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -242,20 +242,10 @@ header, main, footer{
             font-size: 20px;
             line-height: 23px;
             text-transform: uppercase;
-            &::after{
-                content: "\f07a";
-                top: 90px;
-                right: 19px;
-            }
         }
         &__title{
             font-size: 20px;
             line-height: 24px;
-            &::after{
-                content: "\f004";
-                top: 20px;
-                right: 19px;
-            }
         }
         &__name{
             font-family: var(--MB);
@@ -265,6 +255,16 @@ header, main, footer{
             line-height: 24px;
             text-transform: uppercase;
             color: #000000;
+        }
+        &__favorit{
+                top: 90px;
+                right: 19px;
+            
+        }
+         &__basket{
+                top: 20px;
+                right: 19px;
+            
         }
     }
 }
